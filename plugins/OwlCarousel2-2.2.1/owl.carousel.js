@@ -685,9 +685,18 @@
 		}
 
 		if (this.settings.mouseDrag) {
+			// Add drag class for styling
 			this.$element.addClass(this.options.dragClass);
+		
+			// Handle mousedown event for drag start
 			this.$stage.on('mousedown.owl.core', $.proxy(this.onDragStart, this));
-			this.$stage.on('dragstart.owl.core selectstart.owl.core', function() { return false });
+		
+			// Prevent default actions for drag start and text selection
+			// Remove selectstart blocking to allow text selection
+			this.$stage.on('dragstart.owl.core', function() { return false; });
+		
+			// Optionally, if you want to handle touch events, add similar logic for touchstart and touchmove
+			// this.$stage.on('touchstart.owl.core', $.proxy(this.onDragStart, this));
 		}
 
 		if (this.settings.touchDrag){

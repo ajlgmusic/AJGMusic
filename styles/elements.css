@@ -128,11 +128,12 @@ p a:hover::after
 }
 ::selection
 {
-	background: rgba(255,255,255,0.07);
+	/* background: rgba(255,255,255,0.07); */
 }
 p::selection
 {
-	
+	background-color: #3390FF; /* Bright blue */
+    color: #FFFFFF; /* White text for contrast */
 }
 h1{font-size: 48px;}
 h2{font-size: 36px;}

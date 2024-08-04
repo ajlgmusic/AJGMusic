@@ -126,7 +126,8 @@ p a:hover::after
 }
 p::selection
 {
-	
+	background-color: #3390FF; /* Bright blue */
+    color: #FFFFFF; /* White text for contrast */
 }
 h1{font-size: 48px;}
 h2{font-size: 36px;}

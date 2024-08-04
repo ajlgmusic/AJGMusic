@@ -128,7 +128,8 @@ p a:hover::after
 }
 p::selection
 {
-	
+	background-color: #3390FF; /* Bright blue */
+    color: #FFFFFF; /* White text for contrast */
 }
 h1{font-size: 48px;}
 h2{font-size: 36px;}
@@ -850,7 +851,12 @@ section
 }
 .artist_text p:not(:last-child)
 {
+	
 	margin-bottom: 30px;
+}
+.artist_text ::selection {
+    background: #339; /* Background color of the selected text */
+    color: #fff;      /* Text color of the selected text */
 }
 .artist_sig
 {
