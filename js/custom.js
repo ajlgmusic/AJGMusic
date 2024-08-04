@@ -90,7 +90,14 @@ $(document).ready(function()
 		}
 	}
 
+
+
+
 	/* 
+
+
+
+	
 
 	4. Init Home Slider
 
@@ -107,12 +114,12 @@ $(document).ready(function()
     			animateIn: 'fadeInRight',
 				items:1,
 				loop:true,
-				autoplay:false,
-				autoplayTimeout:8000,
-				smartSpeed:1200,
-				autoplaySpeed:1200,
-				dotsSpeed:1200,
-				mouseDrag:false,
+				autoplay:true,
+				autoplayTimeout:3000,
+				smartSpeed:3000,
+				autoplaySpeed:3000,
+				dotsSpeed:3000,
+				mouseDrag:true,
 				nav:false,
 				dots:true,
 				margin:250
